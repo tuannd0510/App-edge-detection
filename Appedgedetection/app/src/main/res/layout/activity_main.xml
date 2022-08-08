@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".FiltersActivity"
+        android:orientation="vertical">
+        <!-- Choose image -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!-- Choose from gallery -->
+            <Button
+                android:id="@+id/btnSelectImg"
+                android:layout_width="195dp"
+                android:layout_height="wrap_content"
+                android:text="Gallery"
+                android:layout_margin="5dp"
+                tools:ignore="MissingConstraints" />
+            <!-- Camera -->
+            <Button
+                android:id="@+id/btnCamera"
+                android:layout_width="195dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Camera"
+                tools:ignore="MissingConstraints" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!-- Choose from gallery -->
+            <Button
+                android:id="@+id/btnReset"
+                android:layout_width="195dp"
+                android:layout_height="wrap_content"
+                android:text="Original"
+                android:layout_margin="5dp"
+                tools:ignore="MissingConstraints" />
+            <!-- Camera -->
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="195dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Save"
+                tools:ignore="MissingConstraints" />
+        </LinearLayout>
+
+        <!-- view image (url) -->
+        <ImageView
+            android:id="@+id/img_photo"
+            android:src="@drawable/ic_baseline_image_24"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"/>
+        <!-- Filster -->
+
+        <Button
+            android:id="@+id/btnRobert"
+            android:text="Robert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            tools:ignore="MissingConstraints"/>
+        <Button
+            android:id="@+id/btnPrewitt"
+            android:text="Prewitt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            tools:ignore="MissingConstraints"/>
+        <Button
+            android:id="@+id/btnSobel"
+            android:text="Sobel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            tools:ignore="MissingConstraints"/>
+        <Button
+            android:id="@+id/btnLaplacian"
+            android:text="Laplacian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            tools:ignore="MissingConstraints"/>
+        <Button
+            android:id="@+id/btnCanny"
+            android:text="Canny"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            tools:ignore="MissingConstraints"/>
+
+    </LinearLayout>
+</ScrollView>
