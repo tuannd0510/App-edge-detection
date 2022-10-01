@@ -1,3 +1,3 @@
 # App-edge-detection
 - demo1
-[[imgs/demo1.jpg]]
+[[/imgs/demo1.jpg]]
